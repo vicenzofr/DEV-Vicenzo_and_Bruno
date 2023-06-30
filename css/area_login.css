@@ -1,0 +1,308 @@
+*{
+    font-family: 'poppins',sans-serif;
+    /* padding: 0;
+    margin: 0%;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none; */
+
+
+}
+
+/* .body1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(33, 78, 117);
+    width: 100%;
+    height: 100%;
+    transition: background 1s;
+} */
+
+
+.botaoo {
+    /* Defina os estilos desejados para o contêiner do switch */
+  }
+  
+  .botaoo.dark {
+    background-color: rgb(49, 49, 49);
+  }
+  
+  .label {
+    background-color: rgb(30, 31, 31);
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+  }
+  
+  .label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+  }
+  
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+  .checkbox:checked + .label .ball {
+    transform: translateX(24px);
+  }
+  
+  .fa-moon {
+    color: #f1c40f;
+  }
+  
+  .fa-sun {
+    color: #f39c12;
+  }
+
+
+body{
+    background-color: pink;
+
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+
+}
+
+.container{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+
+}
+
+span{
+    color: #fff;
+    font-size: small;
+    display: flex;
+    padding: 10px 0 10px 0;
+
+}
+
+header{
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    height: 45px;
+    width: 87%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: #fff;
+    padding: 0 0 0 45px;
+    background-color: darkgray;
+    margin-bottom: 10px;
+
+}
+
+i{
+    position: relative;
+    top: -31px;
+    left: 17px;
+    color: #fff;
+
+}
+
+::-webkit-input-placeholder{
+    color:#fff;
+
+}
+
+.submit{
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    outline: none;
+    height: 45px;
+    width: 100%;
+    background-color: rgba(red, green, blue, alpha);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.submit:hover{
+    box-shadow: 1px 5px 7px 1px rgba(red, green, blue, alpha);
+}
+
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: small;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.left{
+    display: flex;
+
+}
+
+label a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: blue;
+}
+
+.form-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 450px;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+} */
+
+
+
+/* h2{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+
+}
+
+.inputbox{
+    position: absolute;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid white;
+
+}
+
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translate(-50%);
+    color: white;
+    font-size: 1em;
+    pointer-events: none;
+}
+
+input:focus ~ label,
+
+input:focus ~ :valid{
+    top: -5px;
+
+}
+
+
+.inputboc input{
+    width: 100%;
+    height: 50%;
+    background: transparent;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: white;
+} */
