@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora do Bruno</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="fundo">
+        <h1>Bruno de Assunção and Vicenzo Fernandes</h1>
+       <!-- <h1>Isso é um teste pro git</h1> --> 
+        <div class="calculadora">
+            <h2>CALCULADORA</h2>
+        <p id="result"></p>
+        <table>
+            <tr>
+                <td><button class="btn" onclick="limpar()">C</button></td>
+                <td><button class="btn" onclick="Volta()"><</button></td>
+                <td><button class="btn" onclick="Insert('/')">/</button></td>
+                <td><button class="btn" onclick="Insert('x')">X</button></td>
+            </tr>
+             <tr>
+                <td><button class="btn" onclick="Insert('7')">7</button></td>
+                <td><button class="btn" onclick="Insert('8')">8</button></td>
+                <td><button class="btn" onclick="Insert('9')">9</button></td>
+                <td><button class="btn" onclick="Insert('-')">-</button></td>
+            </tr>
+             <tr>
+                <td><button class="btn" onclick="Insert('4')">4</button></td>
+                <td><button class="btn" onclick="Insert('5')">5</button></td>
+                <td><button class="btn" onclick="Insert('6')">6</button></td>
+                <td><button class="btn" onclick="Insert('+')">+</button></td>
+            </tr>
+             <tr>
+                <td><button class="btn" onclick="Insert('1')">1</button></td>
+                <td><button class="btn" onclick="Insert('2')">2</button></td>
+                <td ><button class="btn" onclick="Insert('3')">3</button></td>
+                <td rowspan="2"><button  class="btn" style="height: 106px;" onclick="Calcular()">=</button></td>
+            </tr>
+             <tr>
+                <td colspan="2"><button class="btn" style="width: 106px;" onclick="Insert('0')">0</button></td>
+                <td ><button class="btn" onclick="Insert(',')">,</button></td>
+            </tr>
+        </table>
+        </div>
+    </div>
+</body>
+</html>
