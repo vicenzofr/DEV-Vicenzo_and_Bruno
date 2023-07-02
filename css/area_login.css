@@ -5,8 +5,11 @@
 
 
 
-.botaoo {
-    /* Defina os estilos desejados para o contêiner do switch */
+.btn_conta{
+    background-color: lightgreen ;
+    border: none;
+    cursor: pointer;
+    border-radius:4px ;
   }
   
   .botaoo.dark {
@@ -53,7 +56,7 @@
 
 
 body{
-    background-color: pink;
+    background-color: lightslategrey;
 
 }
 .box{
