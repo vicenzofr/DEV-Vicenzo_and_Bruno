@@ -8,16 +8,13 @@ div.quadrado{
     background: #fafafa;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 5px;
 }
 
 img{
     width: 30%;
     height: 20%;
     border-radius: 10px;
-    left: auto;
-    margin: 50px;
-    display: flex;
-    align-items: center;
 }
 
 div.text{
@@ -27,4 +24,6 @@ div.text{
 
 h1{
     font-family: arial;
+    text-align: center;
+    justify-content: center;
 }
