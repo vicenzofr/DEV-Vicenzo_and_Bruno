@@ -14,7 +14,7 @@ div.quadrado{
 img{
     width: 30%;
     height: 20%;
-    border-radius: 10px;
+    border-radius: 10px;    
 }
 
 div.text{
@@ -23,7 +23,7 @@ div.text{
 }
 
 h1{
-    font-family: arial;
+    font-family: Georgia;
     text-align: center;
     justify-content: center;
 }
