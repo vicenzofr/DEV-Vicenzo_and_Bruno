@@ -1,0 +1,11 @@
+body{
+    background-color: #B0C4DE	;
+}
+
+div.quadrado{ 
+    width: 210mm;
+    height: 243mm;
+    background: #fafafa;
+    margin-left: auto;
+    margin-right: auto;
+}

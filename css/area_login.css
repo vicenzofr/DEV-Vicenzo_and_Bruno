@@ -6,10 +6,12 @@
 
 
 .btn_conta{
-    background-color: lightgreen ;
+    background-color: rgb(124, 168, 127) ;
     border: none;
     cursor: pointer;
     border-radius:4px ;
+    height: 40px;
+    width: 86px;
   }
   
   .botaoo.dark {

@@ -1,9 +1,11 @@
 body {
-    background-color: #6495ED;
+    background-color: #4682B4	;
 
 }
 
-.vicenzo{
+
+
+ .vicenzo{
     background-color: rgb(255, 255, 255);
     border: none;
     border-radius: 6px;
@@ -15,9 +17,9 @@ body {
     display: flex;
     text-decoration: none;
 
-}
+} 
 
-.bruno{
+ .bruno{
     background-color: rgb(255, 255, 255);
     border: none;
     border-radius: 6px;
@@ -42,5 +44,7 @@ body {
     align-items: center;
     display: flex;
     text-decoration: none;
+    
+}  
 
-}
+
