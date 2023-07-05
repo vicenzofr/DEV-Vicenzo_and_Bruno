@@ -2,18 +2,21 @@
     font-family: 'poppins',sans-serif;
 }
 
+.criar_conta{
+    text-decoration: none;
+    font-size: 12px;
+}
 
-
-
-.btn_conta{
-    background-color: rgb(124, 168, 127) ;
+/* 
+ .btn_conta{
     border: none;
     cursor: pointer;
-    border-radius:4px ;
+    border-radius:13px ;
     height: 40px;
     width: 86px;
+    
   }
-  
+ 
   .botaoo.dark {
     background-color: rgb(49, 49, 49);
   }
@@ -54,7 +57,7 @@
   
   .fa-sun {
     color: #f39c12;
-  }
+  } */
 
 
 body{
@@ -94,9 +97,26 @@ header{
 
 }
 
+.visitante{
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 10px;
+    height: 30px;
+    width: 350px;
+    font-family: 'poppins',sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
 .input-field{
     display: flex;
     flex-direction: column;
+}
+.esqueceu{
+    text-decoration: none;
+    color: blue;
+    font-size: 12px;
 }
 
 .input{
@@ -111,7 +131,7 @@ header{
     margin-bottom: 10px;
 
 }
-
+ 
 i{
     position: relative;
     top: -31px;
@@ -159,4 +179,4 @@ i{
 label a{
     color: #fff;
     text-decoration: none;
-}
+} 
