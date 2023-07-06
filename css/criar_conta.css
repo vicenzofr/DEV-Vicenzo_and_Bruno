@@ -1,0 +1,26 @@
+body{
+    background-color: #3687BD;
+}
+
+.input{
+    height: 45px;
+    width: 10%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: #fff;
+    padding: 0 0 0 45px;
+    background-color: #415C6E;
+    margin-bottom: 10px;
+
+}
+
+.submit{
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    outline: none;
+    height: 45px;
+    width: 10%; 
+    
+}
