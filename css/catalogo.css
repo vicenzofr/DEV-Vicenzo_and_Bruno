@@ -23,7 +23,8 @@ body {
 } 
 
 .vicenzo:hover{
-    background-color: #dbdbdb;
+    background-color: #436379;
+    color: aliceblue;
     transition: background-color 0.25s;
     width: 18rem;
     height: 3rem;
@@ -49,7 +50,8 @@ body {
 }
 
 .bruno:hover{
-    background-color: #dbdbdb;
+    background-color: #436379;
+    color: aliceblue;
     transition: background-color 0.25s;
     width: 18rem;
     height: 3rem;
@@ -74,7 +76,8 @@ body {
 }   
 
 .calculadora:hover{
-    background-color: #dbdbdb;
+    background-color: #436379;
+    color: aliceblue;
     transition: background-color 0.25s;
     width: 18rem;
     height: 3rem;
@@ -97,12 +100,11 @@ body {
     text-decoration: none;
     color: blue;
     transition: all 300ms ease-out;
-
-    
 }
 
 .boody:hover{
-    background-color: #dbdbdb;
+    background-color: #436379;
+    color: aliceblue;
     transition: background-color 0.25s;
     width: 18rem;
     height: 3rem;
