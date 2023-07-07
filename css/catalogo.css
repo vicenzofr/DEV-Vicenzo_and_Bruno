@@ -4,17 +4,20 @@ body {
 }
 
 
-
- .vicenzo{
+.vicenzo{
     background-color: rgb(255, 255, 255);
     border: none;
     border-radius: 6px;
     height: 50px;
     width: 300px;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-decoration: none;
 
 } 
@@ -26,9 +29,13 @@ body {
     height: 50px;
     width: 300px;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-decoration: none;
 
 }
@@ -40,11 +47,15 @@ body {
     height: 50px;
     width: 300px;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-decoration: none;
     
-}  
+}   
 
 
