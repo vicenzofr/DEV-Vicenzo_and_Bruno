@@ -13,6 +13,6 @@
     public function Const_cliente($cliente);
     public function criar_clie(Cliente $cliente);
     public function editar_cliente(Cliente $cliente);
-    // public function findByEmail($email);
+    public function authenticateUser($login, $password);
 
   }

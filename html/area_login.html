@@ -18,24 +18,23 @@
 
                 <header>Login</header>
             </div>
-            <form action=""> 
+            <h2 >Entrar no sistema</h2>
 
-            <div class="input-field">
-                <!-- <i class="bx bx-user"></i> -->
-                <input type="email" class="input" placeholder="Email"required > <!-- deixar como obrigadorio (o required nao esta funcionando)-->
-            </div>
+            <p >Use o e-mail para entrar na sua conta:</p>
+            <form method="POST" action="processo_cliente.php" enctype="multipart/form-data">
+                <input type="hidden" name="type" value="login">
+                <label for="login">
+                    <span >Login</span>
+                    <input type="text" id="login" name="login" placeholder="Digite seu Login">
+                </label>
 
-            <div class="input-field">
-                <input type="password" class="input" placeholder="Password"required > <!-- deixar como obrigadorio (o required nao esta funcionando)-->
-                <!-- <i class="bx bx-lock-ult"></i> -->
-            </div>
-            <div class="input-field">
-                 <a href="../html/catalogo.html"> <!-- nao esta entrando no link -->
-                    <input type="submit" class="submit" value="Entrar" required >
-                </a>
-            </div>
+                <label class="label-input" for="senha">
+                    <span >Senha</span>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua Senha">
+                </label>
 
-        </form>
+                <button class="btn btn_Entrar" onclick="">Entrar como Usuário</button>
+            </form>
 
             <div class="bottom">
                 <div class="left">
