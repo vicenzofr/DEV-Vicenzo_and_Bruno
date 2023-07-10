@@ -9,56 +9,104 @@
     <link rel="icon" href="../imagens/icons8-login-50.png">
 </head>
   <body>
- 
-    <div  class="box">
-        <div class="container">
-            <div class="top-header">
+
+    <form class="form">
+        <p id="heading">Login</p>
+
+        <form method="POST" action="processo_cliente.php" enctype="multipart/form-data">
+          <input type="hidden" name="type" value="login" required>    <!--parte php q vc fez -->
         
+        <div class="field">
+          <input autocomplete="off" placeholder="Username" class="input-field" type="text" required>
+        </div>
+        
+        <div class="field">
+          <input placeholder="Password" class="input-field" type="password" required>
+        </div>
+        
+        <div class="btn">
+            <button class="button1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+            <button class="button2">Sign Up</button>
+        </div>
+            <button class="button3">Forgot Password</button>
+
+            <button class="button4">Entrar como visitante</button>
+      </form>
+
+
+
+    
+
+
+
+
+<!--
+<form class="form">
+
+       <div class="container">
+
             <a href="../html/criar_conta.html" class="criar_conta">Não tenho conta</a>
 
-                <header>Login</header>
-            </div>
-            <h2 >Entrar no sistema</h2>
+            <p id="heading">Login</p>
 
-            <p >Use o e-mail para entrar na sua conta:</p>
+             <h2 >Entrar no sistema</h2> 
+
+            <p >Use o e-mail para entrar na sua conta:</p> 
+
+
             <form method="POST" action="processo_cliente.php" enctype="multipart/form-data">
-                <input type="hidden" name="type" value="login">
-                <label for="login">
-                    <span >Login</span>
-                    <input type="text" id="login" name="login" placeholder="Digite seu Login">
-                </label>
+                <input type="hidden" name="type" value="login" required>
+
+            <div class="inputGroup">
+
+                     <label for="login"> Login</label> 
+                    <input type="text" id="login" name="login" placeholder="Digite seu Login" required autocomplete="off" >
+            </div>
+
+            <div class="inputGroup">
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required autocomplete="off">
+            </div>
+
 
                 <label class="label-input" for="senha">
-                    <span >Senha</span>
+                    <span class="senhaaa">Senha</span>
                     <input type="password" id="senha" name="senha" placeholder="Digite sua Senha">
-                </label>
+                </label> 
 
-                <button class="btn btn_Entrar" onclick="">Entrar como Usuário</button>
-            </form>
+      </div>
 
-            <div class="bottom">
+
+      <div class="btn">
+
+          <button class="btn_btn_Entrar" onclick="">Entrar como Usuário</button>
+
+
+           <div class="bottom">
                 <div class="left">
                     <input type="checkbox" id="check">
                     <label for="check"> Lembrar</label>
                 </div>
                 <div>
-                    <a href="../html/esqueceu_senha.html" class="esqueceu"> 
+                    <a href="../html/esqueceu_senha.html" class="esqueceu">
                         Esqueceu senha
                     </a>
                 </div>
-            </div>
+            </div> 
+
+            <button class="button3">Esqueci senha</button>
                 <a href="../html/catalogo.html">
-                     <button class="visitante"> ENTRAR COMO VISITANTE</button>
+                     <button class="visitante"> Entrar como visitante</button>
                 </a>
-        </div>
+            </div>
+</form> -->
 
-        
-    </div>
 
-   
- 
+
+
+
+
+
     <script src="script.js"></script>
-    <!-- <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script> -->
 
 
   </body>
