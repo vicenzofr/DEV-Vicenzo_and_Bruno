@@ -37,7 +37,7 @@ class ClienteDao implements ClienteDAOInterface
   
 
 
-  public function authenticateUser($login, $password)
+  public function authenticateUser($login, $senha)
   {
 
     $retorno = array();
@@ -49,14 +49,12 @@ class ClienteDao implements ClienteDAOInterface
     $result = $this->conn->prepare($query);
 
     $result->bindParam(":login", $login);
-    $result->bindParam(":senha", $password);
+    $result->bindParam(":senha", $senha);
     $result->execute();
 
     $user = $result->fetch(PDO::FETCH_ASSOC);
 
 
-    var_dump($result);
-    die;
 
     if (!empty($user)) {
 

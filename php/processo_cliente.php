@@ -62,7 +62,7 @@ if ($type === "register") {
 
 
    
-  $retorno = $clienteDao->authenticateUser($login, $password);
+  $retorno = $clienteDao->authenticateUser($login, $senha);
 
   // Tenta autenticar usuário
   if ($retorno['erro'] !==  true) {
