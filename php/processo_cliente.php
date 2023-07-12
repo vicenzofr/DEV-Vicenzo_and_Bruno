@@ -60,6 +60,8 @@ if ($type === "register") {
   $login = filter_input(INPUT_POST, "login");
   $password = filter_input(INPUT_POST, "senha");
 
+
+   
   $retorno = $clienteDao->authenticateUser($login, $password);
 
   // Tenta autenticar usuário

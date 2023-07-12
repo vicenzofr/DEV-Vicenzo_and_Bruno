@@ -1,9 +1,9 @@
 <?php
 
 require_once("../php/ClienteModel.php");
-require_once("../php/Message.php");
+require_once("../php/msg.php");
 require_once("../php/globals.php");
-
+require_once("../php/db.php");
 
 
 class ClienteDao implements ClienteDAOInterface
@@ -53,6 +53,10 @@ class ClienteDao implements ClienteDAOInterface
     $result->execute();
 
     $user = $result->fetch(PDO::FETCH_ASSOC);
+
+
+    var_dump($result);
+    die;
 
     if (!empty($user)) {
 
