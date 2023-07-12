@@ -54,6 +54,7 @@ class ClienteDao implements ClienteDAOInterface
 
     $user = $result->fetch(PDO::FETCH_ASSOC);
 
+   
 
 
     if (!empty($user)) {
