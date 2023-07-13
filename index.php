@@ -22,11 +22,7 @@
                <button type="submit" class="button1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
                <button type="button" class="button2" href="html/criar_conta.html">Inscreva-se</button>
             </div>
-<<<<<<< Updated upstream
             <butto type="button"  class="button3" href="esqueceu_senha.html">
-=======
-            <button type="button"  class="button3" href="html/esqueceu_senha.html">
->>>>>>> Stashed changes
             Esqueceu a Senha</button>
             <button type="button"  class="button4" href="html/catalogo.html">Entrar como visitante</button>
          </form>
