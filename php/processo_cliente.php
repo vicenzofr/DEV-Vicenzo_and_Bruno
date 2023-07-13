@@ -19,7 +19,7 @@ if ($type === "register") {
   $nome = filter_input(INPUT_POST, "nome_clie");
   $login = filter_input(INPUT_POST, "login");
   $senha = filter_input(INPUT_POST, "senha");
- 
+
 
 
 
@@ -30,20 +30,20 @@ if ($type === "register") {
     // Verificar se as senhas batem
     // if ($senha === $senha) {
 
-      // Verificar se o e-mail já está cadastrado no sistema
-      
+    // Verificar se o e-mail já está cadastrado no sistema
 
-        $cliente = new Cliente();
 
-        $cliente->nome_clie = $nome;
-        $cliente->login = $login;
-        $cliente->senha = $senha;
-     
-        $auth = true;
+    $cliente = new Cliente();
 
-        $clienteDao->criar_clie($cliente, $auth);
-        $message->setMessage("Usuário cadastrado, seja bem vindo!.", "sucess", "catalogo.html");
-       
+    $cliente->nome_clie = $nome;
+    $cliente->login = $login;
+    $cliente->senha = $senha;
+
+    $auth = true;
+
+    $clienteDao->criar_clie($cliente, $auth);
+    $message->setMessage("Usuário cadastrado, seja bem vindo!.", "sucess", "catalogo.html");
+
     // } else {
 
     //   // Enviar uma msg de erro, de senhas não batem
@@ -53,28 +53,24 @@ if ($type === "register") {
 
     // Enviar uma msg de erro, de dados faltantes
     $message->setMessage("Por favor, preencha todos os campos.", "error", "back");
-  
   }
 } elseif ($type === "login") {
 
   $login = filter_input(INPUT_POST, "login");
-  $password = filter_input(INPUT_POST, "senha");
+  $senha = filter_input(INPUT_POST, "senha");
 
 
-   
   $retorno = $clienteDao->authenticateUser($login, $senha);
 
   // Tenta autenticar usuário
   if ($retorno['erro'] !==  true) {
 
     $_SESSION['usuario'] = $retorno['usuario'];
-    $message->setMessage("Seja bem-vindo!", "success", "catalogo.html");
+    $message->setMessage("Seja bem-vindo!", "success", "../html/catalogo.html");
 
     // Redireciona o usuário, caso não conseguir autenticar
-  }else{
+  } else {
 
     $message->setMessage("Usuário e/ou senha incorretos.", "error", "");
   }
-} else {
-    $message->setMessage("Informações inválidas!", "error", "area_login.html");
 }
