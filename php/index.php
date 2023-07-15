@@ -4,8 +4,8 @@
       <title>Area de login</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="css/area_login.css">
-      <link rel="icon" href="imagens/icons8-login-50.png">
+      <link rel="stylesheet" href="../css/area_login.css">
+      <link rel="icon" href="../imagens/icons8-login-50.png">
    </head>
    <body>
       <div class="form">
