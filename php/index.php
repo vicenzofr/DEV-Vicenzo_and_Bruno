@@ -10,7 +10,7 @@
    <body>
       <div class="form">
          <p id="heading">Login</p>
-         <form method="POST" action="php/processo_cliente.php" enctype="multipart/form-data">
+         <form method="POST" action="processo_cliente.php" enctype="multipart/form-data">
             <input type="hidden" name="type" value="login" required>    <!--parte php q vc fez -->
             <div class="field">
                <input autocomplete="off" placeholder="Username" id="login" name="login" class="input-field" type="text" id="">
