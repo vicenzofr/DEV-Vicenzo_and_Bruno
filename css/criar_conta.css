@@ -217,3 +217,22 @@
     background-color: green;
     color: white;
   }
+
+
+ 
+#icon {
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  /* background: url('../imagens/view.png'); */
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-size: cover;
+}
+
+/* 
+#icon.hide{
+  background: url('../imagens/hide.png');
+  background-size: cover;
+} */
