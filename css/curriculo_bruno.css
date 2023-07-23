@@ -1,3 +1,9 @@
 body{
-    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: blue;
+}
+.titulo{
+    background-color: brown;
+    color: bisque;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
