@@ -10,37 +10,35 @@
 <div>
     <form action="catalogo.html"></form>
     
-    
-</div>
 
-<div>
-    <form action=""> 
-
-        <div class="input-field">
+      <div class="form">
+         <p id="heading">Criar Conta</p>
+         <form method="POST" action="processo_cliente.php" enctype="multipart/form-data">
+            <input type="hidden" name="type" value="login" required>    <!--parte php q vc fez -->
+            <div class="field">
+               <input autocomplete="off" placeholder="Username" id="login" name="login" class="input-field" type="text" id="" required>
+            </div>
+            <div class="field">
+               <input placeholder="Password"  id="senha" name="senha" class="input-field" type="password" required>
+            </div>
             
-            <input type="email" class="input" placeholder="Email"required > 
-        </div>
+         <div class="btn">
+                         <!-- <button type="submit" class="button1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>--> 
+               <button type="button" class="button2" href="../html/catalogo.html">Criar</button> 
+            
+               <div class="btn2">
 
-        <div class="input-field">
-            <input type="password" class="input" placeholder="Password"required > 
-          
-        </div>
+                <button id="btn_pass" onclick="getPassword()"> Gerar senha</button>
+                    <!-- <div id="btn" onclick="getPassword()">Gerar senha</div> -->
+                </div> 
+            
+        
+            </div>      
+            
+         </form>
+      </div>
+      <script src="../javascript/criar_conta.js"></script>
 
-        <div class="input-field">
-            <input type="text" class="input" placeholder="Usuario" required >
-        </a>
-        </div>
-
-        <div class="input-field">
-            <a href="../html/catalogo.html"> <!-- nao esta entrando no link -->
-            <input type="submit" class="submit" value="Entrar" required >
-        </a>
-        </div>
-
-   
-
-    </form>
-</div>
 
 </body>
 </html>
