@@ -1,0 +1,87 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  user-select: none;
+}
+header {
+  margin: 0 auto;
+  width: 431px;
+}
+h1 {
+  background: url("https://i.ibb.co/Q9yv5Jk/flappy-bird-set.png") 0% 340px;
+  padding: 1.2rem 0;
+  margin: 0;
+}
+.score-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 6px;
+  background: #5EE270;
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  /*não permite selecionar o texto ao dar dois cliques */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.input-box {
+  width: 450px;
+}
+
+.input-box h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.input-box input {
+  position: relative;
+  height: 60px;
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  color: #333;
+  margin: 15px 0 20px;
+  outline: none;
+  font-size: 24px;
+  padding: 0 20px;
+  letter-spacing: 2px;
+  box-shadow: -4px -4px 5px rgba(255, 255, 255, 1),
+    inset 4px 4px 5px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 10px rgba(255, 255, 255, 1),
+    4px 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-box input::placeholder {
+  letter-spacing: 0;
+}
+
+.input-box #btn {
+  position: relative;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.input-box #btn:active {
+  background: #9c27b0;
+}

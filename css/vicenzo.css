@@ -31,8 +31,12 @@ h1{
     font-family: Georgia;
     text-align: center;
     justify-content: center;
+    margin: 10px;
 }
 
+.vicenzo{
+    padding: 17px;
+}
 .telefone{
     height: 3%;
     width: 3%;
@@ -55,4 +59,11 @@ h1{
     height: 3%;
     width: 3%;
     float: right;
+}
+
+.icon{
+    height: 15%;
+    width: 15%;
+    float: right; 
+    /* margin: 1.5rem; */
 }
