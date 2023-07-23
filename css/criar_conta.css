@@ -44,7 +44,7 @@
   @media (max-width: 414px) {
     /* Estilos aplicados quando a largura da tela é igual ou inferior a 768px */
     .form {
-    width: 80%;
+    width: 60%;
     font-size: 16px;
     background-color: #171717;
     border-radius: 25px;
@@ -115,6 +115,32 @@
     box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
   }
   
+
+  .pass{
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 25px;
+    padding: 0.8em;
+    border: none;
+    outline: none;
+    color: white;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);  
+  }
+
+   #senha1, #senha2 {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 25px;
+    padding: 0.em;
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 60px;
+    color: rgb(0, 0, 0);
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  } 
   .input-field {
     background: none;
     border: none;

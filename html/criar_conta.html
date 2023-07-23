@@ -9,35 +9,46 @@
 <body>
 <div>
     <form action="catalogo.html"></form>
-    
+
 
       <div class="form">
          <p id="heading">Criar Conta</p>
          <form method="POST" action="processo_cliente.php" enctype="multipart/form-data">
-            <input type="hidden" name="type" value="login" required>   
-         
-            <div class="field">
-               <input autocomplete="off" placeholder="Username" id="login" name="login" class="input-field" type="text" id="" required>
-            </div>
+            <input type="hidden" name="type" value="login" required>
 
             <div class="field">
-               <input type="password" placeholder="Password" id="senha" class="input-field" required minlength="6">
-               <input type="checkbox" onclick="mostrarOcultarSenha()"> 
-           </div>
-            
+               <input autocomplete="off" placeholder="Username" id="login" name="login" class="input-field" type="text" id="" required>
+
+
+            </div>
+
+            <div class="pass">
+
+               <input type="password" placeholder="Senha" id="senha1" class="input-field">
+               <br>
+               <input type="password" placeholder="Confirme sua senha" id="senha2" class="input-field">
+               <br>
+               <input type="checkbox" onclick="msenha()" >
+
+            </div>
+
+        <br>
+
+               <!-- <button onclick="msenha()" type="button">Mostrar senha</button> -->
+
          <div class="btn">
-               <button type="button" class="button2" href="../html/catalogo.html">Criar</button> 
-            
+               <button type="button" class="button2" href="../html/catalogo.html">Criar</button>
+
                <div class="btn2">
                    <button id="btn_pass" onclick="getPassword()"> Gerar senha</button>
-               </div> 
-            
-        
-            </div>      
-            
+               </div>
+
+
+            </div>
+
          </form>
       </div>
-      <scrip src="../javascript/criar_conta.js"></script>
+      
 
 
 </body>

@@ -20,7 +20,7 @@
             </div>
             <div class="btn">
                <button type="submit" class="button1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
-               <button type="button" class="button2" href="/html/criar_conta.html">Inscreva-se</button>
+               <button type="button" class="button2" href="/html/criar_login.html">Inscreva-se</button>
                <button type="button"  class="button3" href="/html/esqueceu_senha.php">Esqueceu a Senha</button>
             <button type="button"  class="button4" href="html/catalogo.html">Entrar como visitante</button>
             </div>
