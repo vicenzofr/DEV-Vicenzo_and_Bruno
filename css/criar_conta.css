@@ -246,7 +246,7 @@
 
 
  
-#icon {
+.icon {
   top: 50%;
   right: 10px;
   transform: translateY(-50%);
@@ -257,8 +257,9 @@
   background-size: cover;
 }
 
-/* 
-#icon.hide{
+
+#eyeSvg.hide{
   background: url('../imagens/hide.png');
   background-size: cover;
-} */
+} 
+

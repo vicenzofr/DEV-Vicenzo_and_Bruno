@@ -150,3 +150,17 @@
     background-color: black;
     color: white;   
   }
+
+  .icon{
+    background: url('../imagens/eye.png');
+    top: 20%;
+    right: 10px;
+    transform: translate(10%);
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+
+  #eyeSvg.hide{
+    background: url('../imagens/hidden.png');
+  }

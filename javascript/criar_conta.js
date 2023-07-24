@@ -21,26 +21,70 @@ function getPassword() {
   document.getElementById('senha').value = password;
 }
 
-function msenha(){
-  let msenha1 = document.getElementById("senha");
-    if(msenha1.type == "password"){
-      msenha1.type = "text";
-    } else {
-      msenha1.type = "password";
-    } 
-    // if(msenha2.type == "password"){
-    //   msenha2.type = "text";
-    // } else{
-    //   msenha2.type = "password";
-    // }
-}
-  var csenha1 = document.getElementById("senha1")
+// function msenha(){
+//   let msenha1 = document.getElementById("senha");
+//     if(msenha1.type == "password"){
+//       msenha1.type = "text";
+//     } else {
+//       msenha1.type = "password";
+//     } 
+//     // if(msenha2.type == "password"){
+//     //   msenha2.type = "text";
+//     // } else{
+//     //   msenha2.type = "password";
+//     // }
+// }
+  // var csenha1 = document.getElementById("senha1")
   // var csenha2 = document.getElementById("senha2")
 
-  function confirmar(){
-      if(csenha1.value){
-          window.alert("Senhas diferentes!")
-      } else{
-        window.alert("Senhas iguais")
+  // function confirmar(){
+  //     if(csenha1.value){
+  //         window.alert("Senhas diferentes!")
+  //     } else{
+  //       window.alert("Senhas iguais")
+  //     }
+  // }
+
+
+
+
+  const passwordInput = document.getElementById("senha");
+  const eyeSvg = document.getElementById("eyeSvg");
+  
+  function eyeClick() {
+      if (passwordInput.type === "password") {
+          showPassword();
+          
+         eyeSvg.classList.add('hide');
+      } else {
+          hidePassword();
+          eyeSvg.classList.remove('hide');
       }
   }
+  
+  function showPassword() {
+      passwordInput.setAttribute("type", "text");
+  }
+  
+  function hidePassword() {
+      passwordInput.setAttribute("type", "password");
+  }
+  
+  
+
+
+  // let container = document.querySelector('field');
+  // let input = document.querySelector('password');
+  // let icon = document.querySelector('img');
+
+  // icon.addEventListener('click', function(){
+  //   container.classList.toggle('visible');
+  //   if(container.classList.contains('visible')){
+  //     icon.src = '../imagens/eye.png';
+  //     input.type = 'text';
+
+  //   } else{
+  //     icon.src = '../imagens/hide.png';
+  //     input.type = 'password';
+  //   }
+  // }) 
