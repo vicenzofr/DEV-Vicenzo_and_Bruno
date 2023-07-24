@@ -8,29 +8,25 @@
       <link rel="icon" href="../imagens/icons8-login-50.png">
    </head>
    <body>
+
       <div class="form">
          <p id="heading">Criar conta</p>
          <form method="POST" action="processo_cliente.php" enctype="multipart/form-data">
-            <input type="hidden" name="type" value="login" required>    <!--parte php q vc fez -->
+            <input type="hidden" name="type" value="login" required>    
             <div class="field">
                <input autocomplete="off" placeholder="Username" id="login" name="login" class="input-field" type="text" id="" required>
             </div>
+
             <div class="field">
                <input placeholder="Password"  id="senha" name="senha" class="input-field" type="password" required minlength="6">
-               <!-- <input type="checkbox" onclick="msenha()" id="check">  -->
-               <!-- <div id="icon"></div> -->
-             <img src="../imagens/eye.png" class="icon" id="eyeSvg" onclick="eyeClick()" >  
+               <img src="../imagens/eye.png" class="icon" id="eyeSvg" onclick="eyeClick()" >  
             </div>
 
             <div class="btn">
-
                <button id="btn_pass" class="button1" onclick="getPassword()"> Gerar senha</button>
-
-               
                <a href="../html/catalogo.html">
                   <button type="submit" class="button2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
                </a>
-              
             </div>
             
          </form>
