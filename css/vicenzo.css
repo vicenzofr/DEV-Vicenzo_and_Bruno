@@ -32,10 +32,42 @@
     justify-content: space-between;     
     align-items: center;
     z-index: 100;
-    
-}
-  
+  }
+.logo{
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+     
 
+}
+
+
+.navbar a{
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+}
+
+
+.home{
+    display: flex;
+    height: 100vh;
+    padding: 0 10%;
+    align-items: center;
+    color: white;
+}
+
+.home-content{
+    max-width: 600px;
+}
+
+.home-content h2{
+    font-size: 30px;
+    color: #00abf0;
+}
 
   /* div.quadrado {
     width: 1100px;
