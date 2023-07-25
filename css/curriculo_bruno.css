@@ -1,9 +1,13 @@
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: blue;
+    background-color: #3685BA;
 }
 .titulo{
-    background-color: brown;
+    background-color: #415C6E;
     color: bisque;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+hr{
+    background-color: crimson;
+    padding: 10px;
 }
