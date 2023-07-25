@@ -1,25 +1,31 @@
-body{
-    background-color:   #3687BD;
-}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+     background-color:   #3687BD;
 
-div.quadrado{ 
-    width: 210mm;
-    height: 243mm;
-    background: #fafafa;
-    margin-left: auto;
-    margin-right: auto;
+  }
+  
+  div.quadrado {
+    width: 1100px;
+    height: 600px;
+    background-color: transparent ;
     border-radius: 5px;
-}
-
+  }
+  
 
 img{
     width: 30%;
-    height: 20%;
-    border-radius: 10px;   
-    float: right; 
+    height: 30%;
+    border-radius: 5%;   
+    float: left; 
     margin: 1.5rem;
+    overflow: hidden;
 
 }
+
 
 div.text{
     font-family: 'Playfair Display', serif;   
@@ -28,13 +34,21 @@ div.text{
 }
 
 h1{
-    font-family: Georgia;
+    font-family: 'Indonesia', sans-serif;
     text-align: center;
     justify-content: center;
     margin: 10px;
 }
 
-.vicenzo{
+
+.icon{
+    height: 23%;
+    width: 20%;
+    float: left;
+    margin: 1.5rem;
+
+}
+/* .vicenzo{
     padding: 17px;
 }
 .telefone{
@@ -65,5 +79,7 @@ h1{
     height: 15%;
     width: 15%;
     float: right; 
-    /* margin: 1.5rem; */
-}
+ margin: 1.5rem; 
+}*/
+
+
