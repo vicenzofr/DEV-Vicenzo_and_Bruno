@@ -82,7 +82,7 @@
     font-size: 20px;
 }
 
-.home-icon{
+/* .home-icon{
     margin: 30px 0 ;
 }
 .github{
@@ -96,7 +96,53 @@
     width: 48px;
     height: 48px;
     cursor: pointer;
+} */
+
+.home-sci{
+    position: absolute;
+    bottom: 45px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a{
+    position: relative;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size:  25px;
+    color: #00abf0;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
 }
 
 
-  
+.home-sci a:hover{
+    color: #081b29;
+}
+
+.home-sci a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transform: .5s;
+}
+
+.home-sci a:hover::before{
+    width: 100%;
+
+}
+
