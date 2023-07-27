@@ -19,7 +19,7 @@
     padding: 20px 10%;
     background:  yellowgreen;
     display: flex;
-    justify-content: space-between;     
+    justify-content: space-between;
     align-items: center;
     z-index: 100;
   }
@@ -48,10 +48,10 @@
 
 .home-content{
     max-width: 600px;
-}   
+}
 
 .navbar a:hover{
-    color: black;    
+    color: black;
 }
 
 .home-content h2{
@@ -118,48 +118,84 @@
 }
 
 
-/* .home-img{ */
-    /* position: absolute;
-    top: 0;
-    right: 100px;
-    border-radius: 50% ;
-    justify-content: center;
-    align-items: center;
-    display: inline-flex;
-   opacity: 40%; 
-    background: red;
-    width: 420px;
-    height: 540px; */
-    /* width: 410px;
-    height: 410px; */
-    /* background-color: seagreen; */
-    /* position: absolute;
-    top: 0;
-    right: 100px; */
-    /* border-radius: 50%;
-    border: 15px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-/* 
-.home-img img{
-    position: relative;
-    max-width: 380px;
-    bottom: 40px;
-    height: 500px;
-    width: 700px;
-} */
+.home-content h1 span::after{
+    animation: typing;
+}
 
-/* .home-img img{
-    width: 500px;
-    height: 500px;
-    
-} */
+  h2 {
+    animation: fadeInOut 5s;
+  }
 
+@keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }     
 
 .home-perfil{
     position: absolute;
     top: 100px;
     right: 10px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This will make the container fill the entire viewport vertically */
+} 
+
+.botao{
+  font-size: 20px;
+  border: 2px solid #00abf0;
+  background-color: transparent;
+  height: 315px;
+  width: 210px;
+  color: white;
+  cursor: pointer;
+  transition: all .45s ease;
+ }
+
+.botao:hover{
+  transform: translateY(-8px);
+  width: 218px;
+  height: 320px ;
+}
+
+.botao p {
+  font-size: 19px;
+  margin: 10px; /* Add margin to the <p> element */
+}
+
+.botao h2 {
+  margin: 10px; /* Add margin to the <h2> element */
+}
+
+.botao i {
+  font-size: 32px; /* Increase the icon size */
+  margin: 10px; /* Add spacing around the icons */
+}
+
+/* .botao h3{
+  font-size: 13px;
+} */
+
+#java{
+  color: yellow ;
+}
+
+#css{
+  color: #264de4;
+}
+
+#html {
+ color:  #e34c26;
+}
+
+
+.click{
+  font-size: 10px;
 }
