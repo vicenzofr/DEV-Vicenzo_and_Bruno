@@ -38,9 +38,10 @@
     margin-left: 35px;
 }
 
+
 .home{
     display: flex;
-    height: 80vh;
+    height: 90vh;
     padding: 0 10%;
     align-items: center;
     color: white;
@@ -71,7 +72,7 @@
 
 .home-sci{
     position: absolute;
-    bottom: 45px;
+    bottom: 280px;
     width: 170px;
     display: flex;
     justify-content: space-between;
@@ -164,6 +165,7 @@
   width: 218px;
   height: 320px ;
 }
+
 
 .botao p {
   font-size: 17px;

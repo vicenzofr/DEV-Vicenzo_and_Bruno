@@ -45,32 +45,5 @@ header{
     color: black;    
 }
 
-
-/* Reset default margin and padding for the body */
-
-  /* Center the container div both horizontally and vertically */
-  .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* This will make the container fill the entire viewport vertically */
-  }
-  
-  /* Add some styles to the button container (optional) */
-  .button {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Add some styles to the button (optional) */
-  .button button {
-    font-size: 18px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    color: black;
-    cursor: pointer;
-  }
+        
   
