@@ -146,7 +146,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* This will make the container fill the entire viewport vertically */
+  height: 90vh; /* This will make the container fill the entire viewport vertically */
 } 
 
 .botao{
@@ -158,6 +158,7 @@
   color: white;
   cursor: pointer;
   transition: all .45s ease;
+ 
  }
 
 .botao:hover{
@@ -181,10 +182,6 @@
   margin: 10px; /* Add spacing around the icons */
 }
 
-/* .botao h3{
-  font-size: 13px;
-} */
-
 #java{
   color: yellow ;
 }
@@ -201,3 +198,89 @@
 .click{
   font-size: 10px;
 }
+
+
+
+.linha{
+  height: 3px;
+  background:  yellowgreen;
+  width: 100%;
+}
+
+.contato{
+  height: 800px;
+  width: 800px;
+  border: 2px solid #00abf0;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 1em;
+
+}
+
+.email-input{
+  height: 30px;
+  width: 200px;
+  border-radius: 5px;
+  /* justify-content: center;
+  display: flex;
+  align-items: center; */
+}
+
+
+.number-input{
+  height: 30px;
+  width: 200px;
+  border-radius: 5px;
+  /* justify-content: center;
+  display: flex;
+  align-items: center; */
+}
+
+.comentarios{
+  height: 400px;
+  width: 90%;
+  text-align: center ;
+  /* justify-content: center;
+  display: flex;
+  align-items: center; */
+}
+
+.enviar{
+  height: 30px;
+  width: 200px;
+  border-radius: 5px;
+  border: 2px solid #00abf0;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  /* justify-content: center;
+  display: flex;
+  align-items: center; */
+}
+
+.enviar:hover{
+ background-color: green;   /* mudar a cor */
+ width: 210px;
+ height: 34px;
+}
+
+
+#works{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 30px;
+  color: white;
+}
+
+
+#contatos{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 30px;
+  color: white; 
+}
+
