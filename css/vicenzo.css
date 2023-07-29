@@ -171,6 +171,7 @@
 .botao p {
   font-size: 17px;
   margin: 10px; /* Add margin to the <p> element */
+  text-align: center;
 }
 
 .botao h2 {
