@@ -1,8 +1,12 @@
+@import url('https://fonts.cdnfonts.com/css/creatinin');
+
+  
   *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Highpro', sans-serif;
+    font-family: 'Creatinin', sans-serif;
+
 }
 
   body {
@@ -146,7 +150,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 87vh; /* This will make the container fill the entire viewport vertically */
+  height: 86vh; /* This will make the container fill the entire viewport vertically */
 } 
 
 .botao{
@@ -243,13 +247,13 @@
   background-color: transparent;
   border: 2px solid #00abf0;
   padding: 20px;
-  /* display: flex;
-  justify-content: center; */
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
 
 }
+
+
 
 .form .title {
   color: royalblue;
@@ -272,6 +276,10 @@
   color: white;
 }
 
+.form input:hover{
+  transition: 0.2s ease-in-out;
+  box-shadow: rgba(6, 12, 90, 0.17) 0px -23px 25px 0px inset, rgba(40, 29, 143, 0.15) 0px -36px 30px 0px inset, rgba(63, 77, 202, 0.1) 0px -79px 40px 0px inset, rgba(109, 129, 219, 0.06) 0px 2px 1px, rgba(68, 82, 145, 0.09) 0px 4px 2px, rgba(52, 81, 134, 0.09) 0px 8px 4px, rgba(65, 126, 167, 0.09) 0px 16px 8px, rgba(61, 56, 56, 0.09) 0px 32px 16px;
+}
 .form textarea {
   border-radius: 8px;
   height: 100px;
@@ -282,10 +290,12 @@
   background-color: transparent;
   border: 2px solid #00abf0;
   color: white;
-  /* border: 1px solid rgb(219, 213, 213); */
-
 }
 
+.form textarea:hover{
+  transition: 0.2s ease-in-out;
+  box-shadow: rgba(6, 12, 90, 0.17) 0px -23px 25px 0px inset, rgba(40, 29, 143, 0.15) 0px -36px 30px 0px inset, rgba(63, 77, 202, 0.1) 0px -79px 40px 0px inset, rgba(109, 129, 219, 0.06) 0px 2px 1px, rgba(68, 82, 145, 0.09) 0px 4px 2px, rgba(52, 81, 134, 0.09) 0px 8px 4px, rgba(65, 126, 167, 0.09) 0px 16px 8px, rgba(61, 56, 56, 0.09) 0px 32px 16px;
+}
 .form button {
   align-self: flex-end;
   padding: 8px;
@@ -303,13 +313,15 @@
   width: 200px;
   display: block;
   margin-top: 70px;
+  transition: 0.5s ease-in-out;
 }
 
 .form button:hover{
-  background-color: green;  /*mudar a cor*/
   width: 210px;
   height: 40px;
+  box-shadow: rgba(35, 73, 117, 0.664) 5px 5px, rgba(25, 40, 126, 0.3) 10px 10px, rgba(34, 22, 145, 0.2) 15px 15px, rgba(80, 67, 153, 0.1) 20px 20px;
  } 
+
 ::placeholder {
   color: white; 
 }
