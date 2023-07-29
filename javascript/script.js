@@ -18,3 +18,12 @@ function Calcular(){
         document.getElementById('result').innerHTML="Nada,Burro!"
     }
 }
+
+function Historico(){
+    const result = document.getElementById('result').innerHTML;
+    if(result){
+        document.getElementById('contas').innerHTML=result;
+    }else{
+        document.getElementById('contas').innerHTML="Não há contas no histórico!";
+    }
+}
