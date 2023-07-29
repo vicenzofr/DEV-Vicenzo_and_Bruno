@@ -146,7 +146,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh; /* This will make the container fill the entire viewport vertically */
+  height: 87vh; /* This will make the container fill the entire viewport vertically */
 } 
 
 .botao{
@@ -207,66 +207,6 @@
   width: 100%;
 }
 
-.contato{
-  height: 800px;
-  width: 800px;
-  border: 2px solid #00abf0;
-  border-radius: 5px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  padding: 1em;
-
-}
-
-.email-input{
-  height: 30px;
-  width: 200px;
-  border-radius: 5px;
-  /* justify-content: center;
-  display: flex;
-  align-items: center; */
-}
-
-
-.number-input{
-  height: 30px;
-  width: 200px;
-  border-radius: 5px;
-  /* justify-content: center;
-  display: flex;
-  align-items: center; */
-}
-
-.comentarios{
-  height: 400px;
-  width: 90%;
-  text-align: center ;
-  /* justify-content: center;
-  display: flex;
-  align-items: center; */
-}
-
-.enviar{
-  height: 30px;
-  width: 200px;
-  border-radius: 5px;
-  border: 2px solid #00abf0;
-  background-color: transparent;
-  color: white;
-  cursor: pointer;
-  /* justify-content: center;
-  display: flex;
-  align-items: center; */
-}
-
-.enviar:hover{
- background-color: green;   /* mudar a cor */
- width: 210px;
- height: 34px;
-}
-
-
 #works{
   justify-content: center;
   align-items: center;
@@ -282,5 +222,93 @@
   display: flex;
   margin: 30px;
   color: white; 
+} 
+
+.main-container {
+  display: flex;
+  justify-content: center; /* Center the container horizontally */
+  align-items: center; /* Center the container vertically */
+  height: 85vh; /* Take up the full viewport height */
 }
 
+.form {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  height: 500px;
+  width: 500px;
+  background-color: transparent;
+  border: 2px solid #00abf0;
+  padding: 20px;
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+
+}
+
+.form .title {
+  color: royalblue;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input {
+  outline: 0;
+  background-color: transparent;
+  border: 2px solid #00abf0;  padding: 8px 14px;
+  border-radius: 8px;
+  width: 100%;
+  height: 50px;
+  color: white;
+}
+
+.form textarea {
+  border-radius: 8px;
+  height: 100px;
+  width: 100%;
+  resize: none;
+  outline: 0;
+  padding: 8px 14px;
+  background-color: transparent;
+  border: 2px solid #00abf0;
+  color: white;
+  /* border: 1px solid rgb(219, 213, 213); */
+
+}
+
+.form button {
+  align-self: flex-end;
+  padding: 8px;
+  outline: 0;
+  border: 0;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: transparent;
+  border: 2px solid #00abf0;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 auto; 
+  height: 35px;
+  width: 200px;
+  display: block;
+  margin-top: 70px;
+}
+
+.form button:hover{
+  background-color: green;  /*mudar a cor*/
+  width: 210px;
+  height: 40px;
+ } 
+::placeholder {
+  color: white; 
+}
