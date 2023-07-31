@@ -20,9 +20,10 @@ function Calcular(){
 }
 
 function Historico(){
-    const result = document.getElementById('result').innerHTML;
-    if(result){
-        document.getElementById('contas').innerHTML=result;
+    const resultado=[]
+    resultado = document.getElementById('result').innerHTML;
+    if(resultado){
+         document.getElementById('contas').innerHTML = resultado;
     }else{
         document.getElementById('contas').innerHTML="Não há contas no histórico!";
     }
