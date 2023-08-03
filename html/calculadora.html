@@ -10,10 +10,9 @@
 </head>
 <body>
     <div class="fundo">
-        <!-- <h1>Bruno de Assunção and Vicenzo Fernandes</h1> -->
-       <!-- <h1>Isso é um teste pro git</h1> --> 
+
         <div class="calculadora">
-            <button onclick="Historico()">HISTÓRICO DE CONTAS</button>
+            <!-- <button onclick="Historico()">HISTÓRICO DE CONTAS</button> -->
             <h2>CALCULADORA</h2>
         <p id="result"></p>
         <table>
@@ -39,7 +38,7 @@
                 <td><button class="btn" onclick="Insert('1')">1</button></td>
                 <td><button class="btn" onclick="Insert('2')">2</button></td>
                 <td ><button class="btn" onclick="Insert('3')">3</button></td>
-                <td rowspan="2"><button  class="btn" style="height: 106px;" onclick="Calcular()">=</button></td>
+                <td rowspan="2"><button  class="btn" style="height: 106px;" onclick="Calcular()" onselect="Historico()">=</button></td>
             </tr>
              <tr>
                 <td colspan="2"><button class="btn" style="width: 106px;" onclick="Insert('0')">0</button></td>
