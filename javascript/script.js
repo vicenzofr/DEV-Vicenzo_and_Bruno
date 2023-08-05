@@ -21,9 +21,9 @@ function Calcular(){
 
 function Historico(){
     const resultado=[]
-    resultado = document.getElementById('contas').innerHTML;
+    resultado = document.getElementById('result').innerHTML;
     if(resultado){
-         document.getElementById('contas').innerHTML = resultado;
+         document.getElementById('contas').innerHTML;
     }else{
         document.getElementById('contas').innerHTML="Não há contas no histórico!";
     }
