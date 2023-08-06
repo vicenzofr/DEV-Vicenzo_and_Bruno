@@ -42,7 +42,7 @@ if ($type === "register") {
     $auth = true;
 
     $clienteDao->criar_clie($cliente, $auth);
-    $message->setMessage("Usuário cadastrado, seja bem vindo!.", "sucess", "catalogo.html");
+    $message->setMessage("Usuário cadastrado, seja bem vindo!.", "sucess", "../html/catalogo.html");
 
     // } else {
 
