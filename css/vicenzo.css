@@ -1,19 +1,21 @@
 @import url('https://fonts.cdnfonts.com/css/creatinin');
 
-  
   *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Creatinin', sans-serif;
+}
 
+.cursor:hover{
+  cursor: url("../imagens/cursor-de-mao.png"), auto;
 }
 
   body {
     background: #081b29;
     padding-top: 80px; /* Adjust the value as needed to prevent content overlap */
+    cursor: url("../imagens/New\ neon\ green.cur")16 16, auto;
 }
-
 
   header{
     position: fixed;
@@ -27,6 +29,7 @@
     align-items: center;
     z-index: 100;
   }
+
 .logo{
     font-size: 30px;
     color: white;
@@ -41,7 +44,6 @@
     font-weight: 500;
     margin-left: 35px;
 }
-
 
 .home{
     display: flex;
@@ -60,10 +62,29 @@
 }
 
 .home-content h2{
-    font-size: 30px;
+    font-size: 35px;
     color: #00abf0;
     margin: 4px 0;
-}
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: #fff;
+    -webkit-text-stroke-width: 1px;
+    text-shadow: 2px 2px 10px blue;
+    transition: all 0.5s ease-in-out;
+    letter-spacing: 0.2em;
+    animation: flicker 0.5s ease-in-out infinite alternate;
+  }
+
+  @keyframes flicker {
+    0% {
+      opacity: 0.5;
+      text-shadow: 2px 2px 10px blue;
+    }
+    100% {
+      opacity: 1;
+      text-shadow: 2px 2px 20px blue;
+    }
+  }
 
 .home-content h1{
     font-size: 40px;
@@ -100,7 +121,6 @@
     transition: .5s;
 }
 
-
 .home-sci a:hover{
     color: #081b29;
 }
@@ -120,38 +140,77 @@
 .home-sci a:hover::before{
     width: 100%;
 
-}
-
+} 
 
 .home-content h1 span::after{
     animation: typing;
 }
 
   h2 {
-    animation: fadeInOut 5s;
+    animation: fadeInOut 5s infinite;
   }
 
-@keyframes fadeInOut {
+@keyframes fadeInOut{
     0% {
       opacity: 0;
     }
     50% {
       opacity: 1;
     }
-  }     
+  }
 
 .home-perfil{
     position: absolute;
     top: 100px;
     right: 10px;
-}
+    transition: transform 0.2s; /* Adicione uma transição suave para tornar a mudança mais agradável */
+    cursor: pointer;
+  }
+
+  .home-perfil:hover {
+    transform: scale(0.92); /* Por exemplo, aumentamos em 20% */
+  }
 
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 86vh; /* This will make the container fill the entire viewport vertically */
-} 
+}
+
+ .botao1{
+    font-size: 20px;
+    border: 2px solid #00abf0;
+    background-color: transparent;
+    height: 315px;
+    width: 210px;
+    color: white;
+    cursor: pointer;
+    transition: all .45s ease;
+    margin: 10px;
+ }
+
+
+ .botao1:hover{
+  transform: translateY(-8px);
+  width: 218px;
+  height: 320px;
+}
+
+.botao1 i {
+  font-size: 32px; /* Increase the icon size */
+  margin: 10px; /* Add spacing around the icons */
+}
+
+.botao1 p {
+  font-size: 17px;
+  margin: 10px; /* Add margin to the <p> element */
+  text-align: center;
+}
+
+.botao1 h2 {
+  margin: 10px; /* Add margin to the <h2> element */
+}
 
 .botao{
   font-size: 20px;
@@ -162,7 +221,7 @@
   color: white;
   cursor: pointer;
   transition: all .45s ease;
- 
+  margin: 10px;
  }
 
 .botao:hover{
@@ -171,21 +230,18 @@
   height: 320px ;
 }
 
-
 .botao p {
   font-size: 17px;
-  margin: 10px; /* Add margin to the <p> element */
+  margin: 10px;
   text-align: center;
 }
 
-.botao h2 {
-  margin: 10px; /* Add margin to the <h2> element */
-}
 
 .botao i {
-  font-size: 32px; /* Increase the icon size */
-  margin: 10px; /* Add spacing around the icons */
+  font-size: 32px; 
+  margin: 10px; 
 }
+
 
 #java{
   color: yellow ;
@@ -199,11 +255,46 @@
  color:  #e34c26;
 }
 
-
 .click{
   font-size: 10px;
 }
 
+.saiba-mais{
+  border: 2px solid #00abf0;
+  background: transparent;
+  color: white;
+  height: 30px;
+  width: 70px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* .saiba-mais:hover{
+
+  transform: translateY(50px);
+} */
+
+/* .saiba-mais {
+  background: #eee;
+  border-radius: 80% / 10%;
+  transform: translateY(5%);
+  transition: .8s ease-in-out;
+}
+
+.saiba-mais label {
+  color: #573b8a;
+  transform: scale(.6);
+} */
+
+/* 
+button .saiba-mais:hover{
+  background-color: red;
+} */
+
+
+.saiba-mais::before{
+  opacity: 0;
+} 
 
 
 .linha{
@@ -220,14 +311,21 @@
   color: white;
 }
 
+#habit{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 30px;
+  color: white;
+}
 
 #contatos{
   justify-content: center;
   align-items: center;
   display: flex;
   margin: 30px;
-  color: white; 
-} 
+  color: white;
+}
 
 .main-container {
   display: flex;
@@ -250,10 +348,7 @@
   text-align: center;
   border-radius: 10px;
   box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
-
 }
-
-
 
 .form .title {
   color: royalblue;
@@ -280,6 +375,7 @@
   transition: 0.2s ease-in-out;
   box-shadow: rgba(6, 12, 90, 0.17) 0px -23px 25px 0px inset, rgba(40, 29, 143, 0.15) 0px -36px 30px 0px inset, rgba(63, 77, 202, 0.1) 0px -79px 40px 0px inset, rgba(109, 129, 219, 0.06) 0px 2px 1px, rgba(68, 82, 145, 0.09) 0px 4px 2px, rgba(52, 81, 134, 0.09) 0px 8px 4px, rgba(65, 126, 167, 0.09) 0px 16px 8px, rgba(61, 56, 56, 0.09) 0px 32px 16px;
 }
+
 .form textarea {
   border-radius: 8px;
   height: 100px;
@@ -296,6 +392,7 @@
   transition: 0.2s ease-in-out;
   box-shadow: rgba(6, 12, 90, 0.17) 0px -23px 25px 0px inset, rgba(40, 29, 143, 0.15) 0px -36px 30px 0px inset, rgba(63, 77, 202, 0.1) 0px -79px 40px 0px inset, rgba(109, 129, 219, 0.06) 0px 2px 1px, rgba(68, 82, 145, 0.09) 0px 4px 2px, rgba(52, 81, 134, 0.09) 0px 8px 4px, rgba(65, 126, 167, 0.09) 0px 16px 8px, rgba(61, 56, 56, 0.09) 0px 32px 16px;
 }
+
 .form button {
   align-self: flex-end;
   padding: 8px;
@@ -308,7 +405,7 @@
   border: 2px solid #00abf0;
   color: #fff;
   cursor: pointer;
-  margin: 0 auto; 
+  margin: 0 auto;
   height: 35px;
   width: 200px;
   display: block;
@@ -320,8 +417,78 @@
   width: 210px;
   height: 40px;
   box-shadow: rgba(35, 73, 117, 0.664) 5px 5px, rgba(25, 40, 126, 0.3) 10px 10px, rgba(34, 22, 145, 0.2) 15px 15px, rgba(80, 67, 153, 0.1) 20px 20px;
- } 
+ }
 
 ::placeholder {
-  color: white; 
+  color: white;
 }
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+::-webkit-scrollbar{
+  background-color: black;
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+  width: 4px;
+  background: #9acd32;
+}
+
+.button-container{
+  font-size: 100px;
+  border: none;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 87vh;
+}
+
+.button-container i{
+  font-size: 100px ;
+  border: none;
+  cursor: pointer;
+}
+
+
+.button-container button {
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+#java1{
+  color: yellow ;
+}
+
+#css1{
+  color: #264de4;
+}
+
+#html1 {
+ color:  #e34c26;
+}
+
+.button-html,
+.button-css,
+.button-java{
+  border: none;
+  background-color: transparent;
+}
+
+#css1:hover, #html1:hover, #java1:hover{
+  transform: translateY(-10px);
+  /* background-color: red; */
+}
+
+

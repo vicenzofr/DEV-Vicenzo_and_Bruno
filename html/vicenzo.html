@@ -17,26 +17,26 @@
 
     <header>
         <a href="vicenzo.html" class="logo">Vicenzo</a>
-
         <nav class="navbar">
             <a href="../html/vicenzo.html" class="homer">Home</a>
-            <a href="../html/portfolio.html" id="port">Portfolio</a> 
+            <a href="#" id="port">Project</a> 
+            <a href="#" id="contact">Contatos</a>
+            <a href="#" id="habilidades">Habilidades</a>
         </nav>
     </header>
 
     <section class="home">
         <div class="home-content">
             <H1 class="vicenzo"> Ola, me chamo Vicenzo</H1> 
-            <h2> Frontend Developer</h2> 
+            <h2 class="words">  Frontend Developer</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia impedit neque quo expedita, quia beatae odit error sit corporis porro quisquam sunt maxime quod delectus eius id quam optio sint.</p>
 
 
             <div class="home-sci">
-                <a href="https://wa.me/5527981323875" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
                 <a href="https://github.com/vicenzofr" target="_blank"><i class='bx bxl-github' ></i></a>
                 <a href="https://www.linkedin.com/in/vicenzo-fernandes-506775278/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
             </div>  
-
             <div class="home-perfil">
                 <img src="../imagens/perfil.png" alt="  ">
             </div>
@@ -45,16 +45,14 @@
     </div>
 
 
-        <div class="linha">
-        </div>
+        <div class="linha" id="linha"></div>
 
 
         <h1 id="works">Project</h1>
 
-        
-    <div class="center">    
-
+    <div class="center"  id="center">    
         <div class="calculadora">
+            
                 <a href="../html/calculadora.html">
                     <button class="botao"> 
                         <h2> Calculadora</h2>
@@ -62,16 +60,49 @@
                         <i class='bx bxl-html5' id="html"></i>
                         <i class='bx bxl-css3' id="css" ></i>
                         <i class='bx bxl-javascript' id="java"></i>
+                           <input type="button" placeholder="saiba mais" class="saiba-mais" >
                     </button>    
                 </a> 
         </div>
        
+        <div class="flappy">
+            <a href="../flappy bird so de zoas/flap.html">
+                <button class="botao1">
+                    <h2>Joguinho</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nihil quo harum distinctio corporis, obcaecati dolore reiciendis. Sed hic.</p>
+                    <i class='bx bxl-html5' id="html"></i>
+                    <i class='bx bxl-css3' id="css" ></i>
+                    <i class='bx bxl-javascript' id="java"></i>
+
+                    <input type="button" placeholder="Saiba Mais" class="saiba-mais">
+                </button>
+            </a>
+        </div>
      </div>
 
 
-        <div class="linha">
+        <div class="linha" id="linha1"></div>
+
+        <h1 id="habit">Habilidades</h1>
+
+
+        <div class="button-container">
+            <button class="button-html" onclick="centerButton('html1')">
+                <i class='bx bxl-html5' id="html1" ></i>
+            </button>
+
+            <button class="button-css"  onclick="centerButton('css1')">
+                <i class='bx bxl-css3' id="css1" ></i>
+
+            </button>
+
+            <button class="button-java" onclick="centerButton('java1')">
+                <i class='bx bxl-javascript' id="java1"></i>
+            </button>
         </div>
 
+
+        <div class="linha" id="linha1"></div>
 
         <h1 id="contatos">Contatos</h1>
         
@@ -80,13 +111,25 @@
         <form class="form">
             <input type="text" placeholder="Nome Completo" class="input" required="">
             <input type="text" placeholder="Seu Email" class="input" required="">
-            <input class="input" placeholder="Seu Número" type="tel" required="" >
+            <input class="input" placeholder="Seu Numero" type="tel" required="" >
             <textarea placeholder="Sua Mensagem"></textarea>
-             
             <button>Enviar</button>
         </form>
     </div>
-        
+     
+    
+    <div class="footer"></div>
+
+    <footer>
+        <div class="footer-content">
+        <p class="copyright">
+            © 2023 SeuSite. Todos os direitos reservados.
+        </p>
+    </footer> 
+
+
+    <scrip src="../javascript/vicenzo.js"defer > </script>
+
 
 </body>
 </html>
