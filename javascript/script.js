@@ -20,8 +20,8 @@ function Calcular(){
 }
 
 function Historico(){
-    const resultado=[]
-    resultado = document.getElementById('result').innerHTML;
+    // const resultado=[]
+    var resultado = document.getElementById('result').innerHTML;
     if(resultado){
          document.getElementById('contas').innerHTML;
     }else{
