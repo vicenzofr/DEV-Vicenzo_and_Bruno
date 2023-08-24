@@ -16,6 +16,11 @@ body{
     background-color: #3685BA ;
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 38px;
+    text-align: center;
+}
+.titulo span{ 
+    color: #00ff08;
 }
 hr{
     background-color:  #3685BA;
@@ -130,4 +135,31 @@ color: #00ff08;
     100%{
         top: 30px;
     }
+}
+
+
+section .especialidades{
+padding: 40px 4%;
+}
+section .especialidades .flex{
+    gap: 60px;
+}
+
+.especialidades .especialidades-box{
+    color: #fff;
+    padding: 40px;
+    border: 2px solid #a81e1e;
+margin-top: 45px;
+border-radius: 20px;
+transition: .3s;
+}
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #6d6767;
+    
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
 }
