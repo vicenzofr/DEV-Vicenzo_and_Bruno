@@ -147,15 +147,16 @@ section .especialidades .flex{
 
 .especialidades .especialidades-box{
     color: #fff;
-    padding: 40px;
-    border: 2px solid #a81e1e;
-margin-top: 45px;
+    margin: 5px;
+    padding: 45px;
+    border: 2px solid #8d3434;
+margin-top: 20px;
 border-radius: 20px;
 transition: .3s;
 }
 .especialidades .especialidades-box:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 8px #6d6767;
+    transform: scale(1.02);
+    box-shadow: 0 0 8px #5f4e4e;
     
 }
 
