@@ -100,7 +100,7 @@ a :hover, form .btn-enviar input:hover{
     transition: .3s;
 }
 section.topo-do-site{
-   padding: 40px 4px; 
+   padding: 40px 4%; 
 }
 section.topo-do-site .flex{
 align-items: center;
@@ -334,3 +334,39 @@ footer .line-footer p a{
     color: #101f10;
 }
 
+/* como deixar responsivo */
+
+@media screen and (max-width: 1020px){
+    
+    /* isso é uma mudança dentro do displey flex, fazendo mudança na forma como se mostra */
+    .flex{
+        flex-direction: column ;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+        }
+
+    /* cabeçalho */
+    .menu-desktop,.btn-contato{
+        display: none;
+    }
+
+    /* topo do site */
+    .topo-do-site h1{
+        font-size: 25px;
+        
+   }
+   section.topo-do-site{
+    padding: 20px 8%; 
+ }
+
+ .topo-do-site .img_topo_site img{
+width: 100%;
+ }
+
+ section.topo-do-site .flex{
+    gap: 40px;
+    }
+
+}
