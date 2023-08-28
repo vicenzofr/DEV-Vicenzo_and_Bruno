@@ -199,7 +199,7 @@ margin: 20px 0 ;
 text-align:justify;
 }
 
-.sobre .txt-sobre .btn-social button{
+.btn-social button{
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -212,7 +212,7 @@ text-align:justify;
 }
 
 
-section .portifolio{
+section.portifolio{
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #6d6767;
 }
@@ -306,5 +306,31 @@ background-color: #00ff08;
 color: #000000;
 cursor: pointer;
 transition: .3s;
+}
+
+footer{
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #6d6767;
+}
+footer .flex{
+justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+ 
+}
+.borda{
+    border-top: 2px solid #00ff08;
+}
+
+
+footer .line-footer p i{
+    color: #00ff08;
+    font-size: 15px;
+}
+
+footer .line-footer p a{
+    color: #101f10;
 }
 
