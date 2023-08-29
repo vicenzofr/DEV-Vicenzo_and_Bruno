@@ -1,205 +1,231 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.flex{
+
+.flex {
     display: flex;
 }
-body{
+
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: 
-    #415C6E;
+    background-color:
+        #415C6E;
     height: 100vh;
 }
-.titulo{
-    background-color: #3685BA ;
+
+.titulo {
+    background-color: #3685BA;
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 38px;
     text-align: center;
 }
-.titulo span{ 
+
+.titulo span {
     color: #00ff08;
 }
-hr{
-    background-color:  #3685BA;
+
+hr {
+    background-color: #3685BA;
     padding: 5px;
     size: 4px;
     border: none;
 }
-li{
-    
+
+li {
+
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-h3{
+
+h3 {
     text-align: center;
     font-size: larger;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
-p{
+
+p {
     background-color: aliceblue;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.interface{
-    max-width:1280px ;
+
+.interface {
+    max-width: 1280px;
     margin: 0 auto;
 }
-header{
+
+header {
     padding: 40px;
 }
-header>.interface{
+
+header>.interface {
     display: flex;
-    align-items:center ;
+    align-items: center;
     justify-content: space-between;
 }
-header a{
-    color:#6d6767;
+
+header a {
+    color: #6d6767;
     text-decoration: none;
     display: inline-block;
 }
 
-header a:hover{
+header a:hover {
     color: #a81e1e;
     transform: scale(1.05);
     transition: .2s;
 }
 
 
-header nav ul{
+header nav ul {
     list-style-type: none;
 
 }
-header nav ul{
- display: inline-block;
- padding: 0 40px;
+
+header nav ul {
+    display: inline-block;
+    padding: 0 40px;
 }
-.btn-contato button{
-padding: 10px 40px;
-font-size: 18px;
-font-weight: 600;
-background-color: #00ff08;
-border: none;
-border-radius: 30px;
-cursor: pointer;
-transition: .2s;
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ff08;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
 }
-button:hover{
+
+button:hover {
     box-shadow: 0px 0px 8px #6d6767;
 }
-a{
+
+a {
     text-decoration: none;
     font-size: 40px;
     color: #00ff08;
-    
+
 
 }
-a :hover, form .btn-enviar input:hover{
+
+a :hover,
+form .btn-enviar input:hover {
     transform: scale(1.05);
     transition: .3s;
 }
-section.topo-do-site{
-   padding: 40px 4%; 
-}
-section.topo-do-site .flex{
-align-items: center;
-justify-content: center;
-gap: 90px;
-margin-top: 100px;
-}
-.topo-do-site h1{
-     color: #fff;
-     font-size: 38px;
-     line-height: 40px;
-}
-.topo-do-site .txt_topo_site h1 span{
-color: #00ff08;
+
+section.topo-do-site {
+    padding: 40px 4%;
 }
 
-.topo-do-site .txt_topo_site p{
- 
-    margin:40px 0 ;
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    margin-top: 100px;
 }
 
-.topo-do-site .img_topo_site img{
+.topo-do-site h1 {
+    color: #fff;
+    font-size: 38px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt_topo_site h1 span {
+    color: #00ff08;
+}
+
+.topo-do-site .txt_topo_site p {
+
+    margin: 40px 0;
+}
+
+.topo-do-site .img_topo_site img {
     position: relative;
     animation: Flutuar 2s ease-in-out infinite alternate;
 }
 
-@keyframes Flutuar{
-    0%{
+@keyframes Flutuar {
+    0% {
         top: 0;
 
     }
-    100%{
+
+    100% {
         top: 30px;
     }
 }
 
 
-section .especialidades{
-padding: 40px 4%;
+section .especialidades {
+    padding: 40px 4%;
 }
-section.especialidades .flex{
+
+section.especialidades .flex {
     margin-top: 60px;
     margin-bottom: 150px;
     gap: 60px;
 }
 
-.especialidades .especialidades-box{
+.especialidades .especialidades-box {
     color: #fff;
     margin: 5px;
     padding: 45px;
     border: 2px solid #8d3434;
-margin-top: 20px;
-border-radius: 20px;
-transition: .3s;
-}
-.especialidades .especialidades-box:hover{
-    transform: scale(1.02);
-    box-shadow: 0 0 8px #5f4e4e;
-    
+    margin-top: 20px;
+    border-radius: 20px;
+    transition: .3s;
 }
 
-.especialidades .especialidades-box h3{
+.especialidades .especialidades-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px #5f4e4e;
+
+}
+
+.especialidades .especialidades-box h3 {
     font-size: 28px;
     margin: 15px 0;
 }
 
-section .sobre{
+section .sobre {
     padding: 90px 4%;
 }
 
-section.sobre .flex{
+section.sobre .flex {
     margin-top: 100px;
     align-items: center;
     gap: 60px;
     margin-bottom: 150px;
 }
 
-.sobre .txt-sobre{
+.sobre .txt-sobre {
     color: #fff;
 
 }
 
-.sobre .txt-sobre h2{
-font-size: 40px;
-line-height: 40px;
-margin-bottom: 30px;
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
 }
 
-.sobre .txt-sobre h2 span{
-color: #00ff08;
-display: block;
+.sobre .txt-sobre h2 span {
+    color: #00ff08;
+    display: block;
 
 }
-.sobre .txt-sobre p{
-margin: 20px 0 ;
-text-align:justify;
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
 }
 
-.btn-social button{
+.btn-social button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -212,28 +238,31 @@ text-align:justify;
 }
 
 
-section.portifolio{
+section.portifolio {
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #6d6767;
 }
 
-.img-port{
+.img-port {
     width: 360px;
     height: 460px;
-    background-size: cover;/* alinha o tamanho da imagem */
-    background-position: 100% 0%; /* ele define de onde começa no caso seria 0%*/
-transition: .7s;
-cursor: pointer;
-border-radius: 40px;
-position: relative; /* algumas animações
+    background-size: cover;
+    /* alinha o tamanho da imagem */
+    background-position: 100% 0%;
+    /* ele define de onde começa no caso seria 0%*/
+    transition: .7s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+    /* algumas animações
  para funcionar precisam desse código */
 }
 
-.img-port:hover{
-background-position: 100% 100%;
+.img-port:hover {
+    background-position: 100% 100%;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -252,29 +281,31 @@ background-position: 100% 100%;
 
 }
 
-.overlay:hover{
-opacity: 1;
-}
-section.portifolio .flex{
-justify-content: space-around;
-margin-top: 60px;
+.overlay:hover {
+    opacity: 1;
 }
 
-section.formulario{
+section.portifolio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+section.formulario {
     padding: 80px 4%;
 }
 
-form{
-     max-width: 500px;
-     margin: auto;
-     display: flex;
-     justify-content: center;
-     flex-direction: column;
-     gap: 10px;
-     margin-top: 40px;
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
 }
 
-form input,textarea{
+form input,
+textarea {
     width: 100%;
     background-color: #1f1c1c;
     border: none;
@@ -286,87 +317,143 @@ form input,textarea{
 
 }
 
-form textarea{
+form textarea {
     resize: none;
     max-height: 200px;
 }
 
-form input::placeholder{
+form input::placeholder {
     color: #415C6E;
 }
 
-form .btn-enviar{
+form .btn-enviar {
     margin-top: 25px;
     text-align: center;
 }
 
-form .btn-enviar input{
-width: 120px;
-background-color: #00ff08;
-color: #000000;
-cursor: pointer;
-transition: .3s;
+form .btn-enviar input {
+    width: 120px;
+    background-color: #00ff08;
+    color: #000000;
+    cursor: pointer;
+    transition: .3s;
 }
 
-footer{
+footer {
     padding: 60px 4%;
     box-shadow: 0 0 40px 10px #6d6767;
 }
-footer .flex{
-justify-content: space-between;
+
+footer .flex {
+    justify-content: space-between;
 }
 
 footer .line-footer {
     padding: 20px 0;
- 
+
 }
-.borda{
+
+.borda {
     border-top: 2px solid #00ff08;
 }
 
 
-footer .line-footer p i{
+footer .line-footer p i {
     color: #00ff08;
     font-size: 15px;
 }
 
-footer .line-footer p a{
+footer .line-footer p a {
     color: #101f10;
 }
 
 /* como deixar responsivo */
 
-@media screen and (max-width: 1020px){
-    
+@media screen and (max-width: 1020px) {
+
     /* isso é uma mudança dentro do displey flex, fazendo mudança na forma como se mostra */
-    .flex{
-        flex-direction: column ;
+    .flex {
+        flex-direction: column;
     }
 
-    .topo-do-site .flex{
+    .topo-do-site .flex {
         flex-direction: column-reverse;
-        }
+    }
 
     /* cabeçalho */
-    .menu-desktop,.btn-contato{
+    .menu-desktop,
+    .btn-contato {
         display: none;
     }
 
     /* topo do site */
-    .topo-do-site h1{
+    .topo-do-site h1 {
         font-size: 25px;
-        
-   }
-   section.topo-do-site{
-    padding: 20px 8%; 
- }
 
- .topo-do-site .img_topo_site img{
-width: 100%;
- }
-
- section.topo-do-site .flex{
-    gap: 40px;
     }
 
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site .img_topo_site img {
+        width: 100%;
+    }
+
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    section .especialidades {
+        padding: 40px 8%;
+    }
+
+    .titulo {
+        background-color: #3685BA;
+       
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 32px;
+      line-height: 34px;
+    }
+
+    section .sobre {
+        padding: 90px 8%;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 35px;
+        line-height: 35px;
+       text-align: center;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    .img-sobre img{
+        width: 100%;
+    }
+
+
+    section.portifolio {
+        padding: 80px 8%;
+        
+    }
+
+    .img-port {
+        width:100%;
+        margin: 0 auto;
+    }
+
+    section.portifolio .flex {
+        gap: 60px;
+    }
+
+    footer .flex {
+     flex-direction: column;
+    }
+
+    footer .line-footer {
+     text-align: center;
+    }
 }
