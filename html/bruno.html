@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo para Portifólio</title>
      <link rel="stylesheet" href="../css/curriculo_bruno.css">
-</head>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="../javascript/menu-bruno.js" defer></script>
+    <!-- o atributo defer serve para ele carregar o js dos do html -->
+    
+    </head>
 <body>
 
     <header>
@@ -30,7 +34,7 @@
 
          </nav>
 
-        </div>
+        
 
 
         <div class="btn-contato">
@@ -39,6 +43,34 @@
             </a>
         </div>
 
+
+        <div class="btn-abrir-menu" id="btn-menu">
+            <i class="bi bi-list"></i>
+        </div>
+        <div class="menu-mobile" id="menu-mobile">
+            <div class="btn-fechar">
+                <i class="bi bi-x"></i>
+            </div>
+
+            <nav >
+                <ul>
+                    <li><a href="#">Objetivo</a></li>
+                    <li><a href="#">Habilidade & Competências</a></li>
+                    <li><a href="#">Experiência</a></li>
+                    <li><a href="#">Educação</a></li>
+                    <li><a href="#">hobbys</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+    
+             </nav>
+
+        </div>
+
+        <div class="overlay-menu" id="overlay-menu">
+
+        </div>
+
+    </div>
     </header>
        
 <main>

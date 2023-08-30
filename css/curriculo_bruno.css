@@ -70,21 +70,21 @@ header a {
     color: #6d6767;
     text-decoration: none;
     display: inline-block;
+    transition: .2s;
 }
 
-header a:hover {
+header nav.menu-desktop a:hover {
     color: #a81e1e;
     transform: scale(1.05);
     transition: .2s;
 }
 
 
-header nav ul {
+header nav.menu-desktop ul {
     list-style-type: none;
-
 }
 
-header nav ul {
+header nav.menu-desktop ul li{
     display: inline-block;
     padding: 0 40px;
 }
@@ -456,4 +456,75 @@ footer .line-footer p a {
     footer .line-footer {
      text-align: center;
     }
+}
+
+/* estilo do menu mobile */
+
+.menu-mobile{
+    background-color: #000000;
+    height: 100vh;
+    /* usando o heigth com 100vh ele toma toda a proporção da tela */
+    position: fixed;
+    top: 0 ;
+    right: 0;
+    z-index: 99999;
+    /* z-index faz com que o elemento fica por cima de todos os outros elementos que são menores que o valor */
+    width: 0%;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.btn-abrir-menu i{
+    color: #00ff08;
+    font-size: 40px;
+
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+color: #fff;
+font-size: 20px;
+font-weight: 300;
+padding: 20px 7%;
+transition: .3s;
+display: block;
+/* usando o display block ele faz que não só a div seja afetada, mas todo o espaço a ser preenchido */
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: #00ff08;
+    color: #000000;
+}
+
+.menu-mobile .btn-fechar i{
+color: #00ff08;
+font-size: 30px;
+
+}
+.menu-mobile .btn-fechar{
+    padding: 20px 4%;
+}
+
+.overlay-menu{
+    background-color: #00000041;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+
+}
+.menu-mobile.abrir-menu{
+    width: 70%;
+
+}
+/* sempre que que o abrir menu existir  ele chama a classe ovelay*/
+/* usando ~ */
+.menu-mobile.abrir-menu ~ .overlay-menu {
+    display: block;
 }
