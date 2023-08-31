@@ -55,7 +55,7 @@ header a {
 }
 
 header nav.menu-desktop a:hover {
-    color: #a81e1e;
+    color: #00ff08;
     transform: scale(1.05);
     transition: .2s;
 }
@@ -154,7 +154,7 @@ section.especialidades .flex {
     color: #fff;
     margin: 5px;
     padding: 45px;
-    border: 2px solid #8d3434;
+    border: 2px solid #0d160d;
     margin-top: 20px;
     border-radius: 20px;
     transition: .3s;
@@ -162,8 +162,8 @@ section.especialidades .flex {
 
 .especialidades .especialidades-box:hover {
     transform: scale(1.02);
-    box-shadow: 0 0 8px #5f4e4e;
-
+    box-shadow: 0 0 8px #00ff08;
+background-color: #415C6E;
 }
 
 .especialidades .especialidades-box h3 {
@@ -320,7 +320,7 @@ form .btn-enviar input {
 
 footer {
     padding: 60px 4%;
-    box-shadow: 0 0 40px 10px #6d6767;
+    box-shadow: 0 0 40px 10px #415C6E;
 }
 
 footer .flex {
