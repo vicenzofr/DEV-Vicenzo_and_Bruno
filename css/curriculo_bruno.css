@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+    /* esse atributo simplesmente é sensacional,
+    ele faz a rolagem de ancoragem do site ficar suave */
+}
 
 .flex {
     display: flex;
@@ -214,7 +219,7 @@ section.sobre .flex {
 
 section.portifolio {
     padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #6086a3;
+    box-shadow: 0 0 40px 10px #415C6E;
 }
 
 .img-port {
@@ -242,7 +247,7 @@ section.portifolio {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #101f10;
+    background-color: #3685BA;
     border-radius: 40px;
     display: flex;
     align-items: center;
