@@ -118,9 +118,11 @@ section.topo-do-site .flex {
     color: #00ff08;
 }
 
-.topo-do-site .txt_topo_site p {
-
-    margin: 40px 0;
+.topo-do-site .txt_topo_site p, .txt-sobre p {
+    background-color: #3685BA;
+    padding: 25px 4%;
+    border-radius: 15px;
+    margin: 30px 0;
 }
 
 .topo-do-site .img_topo_site img {
