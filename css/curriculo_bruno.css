@@ -575,7 +575,7 @@ footer .line-footer p a {
     height: 100%;
     border-left: 2px solid #50B5E3;
     right: -9px;
-    animation: cursor .5s infinite, digitar 22s steps(16);
+    animation: cursor .5s infinite , digitar 22s steps(16);
     width: calc(100% + 13px);
     background-color: #233036;
 }
