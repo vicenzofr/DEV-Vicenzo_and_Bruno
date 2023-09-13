@@ -575,7 +575,7 @@ footer .line-footer p a {
     height: 100%;
     border-left: 2px solid #50B5E3;
     right: -9px;
-    animation: cursor .5s infinite , digitar 22s steps(16);
+    animation: cursor .5s infinite, digitar 22s steps(16);
     width: calc(100% + 13px);
     background-color: #233036;
 }
@@ -642,4 +642,30 @@ footer .line-footer p a {
     100% {
         content: "aprender sempre mais!";
     }
+}
+
+/* DESENVOLVIMENTO DO PRELOAD */
+span.carregamento {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border: 12px solid #3685BA;
+    border-radius: 50%;
+    border-bottom: 12px solid transparent;
+    animation: loading 1.5s ease-in-out infinite;
+}
+
+@keyframes loading {
+    0% {
+        
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
 }
