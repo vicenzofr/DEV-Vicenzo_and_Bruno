@@ -6,11 +6,20 @@ btnMenu.addEventListener('click', function () {
     menu.classList.add('abrir-menu');
 })
 
-menu.addEventListener('click',()=>{
+menu.addEventListener('click', () => {
     menu.classList.remove('abrir-menu');
 })
 
-overlay.addEventListener('click',()=>{
+overlay.addEventListener('click', () => {
     menu.classList.remove('abrir-menu');
 })
+function loading() {
+    setTimeout(() => {
+        let body = document.querySelector('#body');
+        body.style.display = 'block';
+        let blocoLoading = document.querySelector('.bloco');
+        blocoLoading.style.display = 'none';
+    }, 3000);
+
+}
 
