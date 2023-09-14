@@ -166,7 +166,9 @@ section.especialidades .flex {
     color: #fff;
     margin: 5px;
     padding: 45px;
-    border: 2px solid #0d160d;
+    background-color: #214B5E;
+    width: 300px;
+overflow: hidden;
     margin-top: 20px;
     border-radius: 20px;
     transition: .3s;
@@ -177,12 +179,33 @@ section.especialidades .flex {
     font-size: 30px;
     color: #50B5E3;
 }
-
+.especialidades .especialidades-box:hover i {
+color: #415C6E;
+}
 .especialidades .especialidades-box:hover {
     transform: scale(1.02);
+    color: #000000;
     box-shadow: 0 0 8px #6F98AB;
     background-color: #415C6E;
 }
+
+.especialidades .especialidades-box::before {
+    content: "";
+    position: absolute;
+    top: -75px;
+    left: -45px;
+    z-index: -1;
+    background-color: #50B5E3;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    transition: .6s;
+}
+
+.especialidades .especialidades-box:hover::before {
+    transform: scale(6);
+}
+
 
 .especialidades .especialidades-box h3 {
     font-size: 28px;
