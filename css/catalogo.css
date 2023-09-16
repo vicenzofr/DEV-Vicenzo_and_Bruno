@@ -1,68 +1,68 @@
 body {
-    background-color: #3687BD;
-    height: 100%;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: #3687BD;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
-button {
-    width: 15em;
-    position: relative;
-    height: 4.5em;
-    border: 3px ridge yellowgreen;
-    outline: none;
-    background-color: transparent;
-    color: white;
-    transition: 1s;
-    border-radius: 0.3em;
-    font-size: 16px;
-    font-weight: bold;
-    margin-left: 30px;
-    cursor: pointer;
-    text-decoration: none;
-    line-height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
-  
-  button::after {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: 3%;
-    width: 95%;
-    height: 40%;
-    background-color: #3687BD;
-    transition: 0.5s;
-    transform-origin: center;
-  }
-  
-  button::before {
-    content: "";
-    transform-origin: center;
-    position: absolute;
-    top: 80%;
-    left: 3%;
-    width: 95%;
-    height: 40%;
-    background-color: #3687BD;
-    transition: 0.5s;
-  }
-  
-  button:hover::before, button:hover::after {
-    transform: scale(0)
-  }
-  
-  button:hover {
-    box-shadow: inset 0px 0px 25px #a1e01f;
-  }
 
+button.btn-perfil {
+  margin: 30px;
+  width: 15em;
+  position: relative;
+  height: 4.5em;
+  border: 3px ridge yellowgreen;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  transition: 1s;
+  border-radius: 0.3em;
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 20px;
+}
 
+button::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #3687BD;
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+button::before {
+  content: "";
+  transform-origin: center;
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  width: 95%;
+  height: 40%;
+  background-color: #3687BD;
+  transition: 0.5s;
+}
+
+button:hover::before,
+button:hover::after {
+  transform: scale(0)
+}
+
+button:hover {
+  box-shadow: inset 0px 0px 25px #a1e01f;
+}
