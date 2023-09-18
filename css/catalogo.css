@@ -1,19 +1,21 @@
 body {
   background-color: #3687BD;
-  max-height: 100%;
+  height: 100%;
   margin: 0;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .container {
+
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
 /* 
 button.btn-perfil {
   margin: 30px;
@@ -67,7 +69,8 @@ button:hover {
   box-shadow: inset 0px 0px 25px #a1e01f;
 } */
 
-.card{
+.card {
+
   position: relative;
   width: 350px;
   height: 190px;
@@ -75,45 +78,49 @@ button:hover {
   transition: 0.5s;
 }
 
-.card:hover{
+.card:hover {
   height: 450px;
 }
-.card .lines{
+
+.card .lines {
   position: absolute;
   inset: 0;
   background-color: blue;
   overflow: hidden;
 }
-.card .lines::before{
-content: "";
-position: absolute;
-top: 50%;
-left: 50%;
-transform:translate(-50%,-50%) ;
-width: 600px;
-height: 120px;
-background: linear-gradient(transparent,#45f3ff,#45f3ff,#45f3ff,transparent);
-animation: animate 4s linear;
-animation-iteration-count: infinite;
+
+.card .lines::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 120px;
+  background: linear-gradient(transparent, #45f3ff, #45f3ff, #45f3ff, transparent);
+  animation: animate 4s linear;
+  animation-iteration-count: infinite;
 }
 
 @keyframes animate {
-  0%{
-    transform:translate(-50%,-50%)  rotate(0deg);  
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
   }
-100%{
-  transform:translate(-50%,-50%)  rotate(360deg);  
 
-}
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+
+  }
 }
 
-.card .lines::after{
-content: "";
-position: absolute;
-inset: 3px;
-background-color: #292929;
+.card .lines::after {
+  content: "";
+  position: absolute;
+  inset: 3px;
+  background-color: #292929;
 }
-.card .img-catag{
+
+.card .img-catag {
   position: absolute;
   top: -50px;
   left: 50%;
@@ -126,42 +133,43 @@ background-color: #292929;
   overflow: hidden;
 }
 
-.card:hover .img-catag{
-width: 250px;
-height: 250px;
+.card:hover .img-catag {
+  width: 250px;
+  height: 250px;
 }
 
-.card .img-catag::before{
-content: "";
-position: absolute;
-top: 50%;
-left: 50%;
-width: 500px;
-height: 150px;
-transform: translate(-50%,-50%);
-background: linear-gradient(transparent,#ff3c7b,#ff3c7b,#ff3c7b,transparent);
-animation: animate2 4s linear;
-animation-iteration-count: infinite;
+.card .img-catag::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 150px;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(transparent, #ff3c7b, #ff3c7b, #ff3c7b, transparent);
+  animation: animate2 4s linear;
+  animation-iteration-count: infinite;
 }
 
 @keyframes animate2 {
-  0%{
-    transform:translate(-50%,-50%)  rotate(360deg);  
+  0% {
+    transform: translate(-50%, -50%) rotate(360deg);
   }
-100%{
-  transform:translate(-50%,-50%)  rotate(0deg);  
 
-}
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+
+  }
 }
 
-.card .img-catag::after{
+.card .img-catag::after {
   content: "";
-position: absolute;
-inset: 3px;
-background-color: #292929;
+  position: absolute;
+  inset: 3px;
+  background-color: #292929;
 }
 
-.card .img-catag img{
+.card .img-catag img {
   top: 10px;
   left: 10px;
   position: absolute;
@@ -173,7 +181,7 @@ background-color: #292929;
   justify-content: center;
 }
 
-.card .descricao{
+.card .descricao {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -183,39 +191,41 @@ background-color: #292929;
   overflow: hidden;
 
 }
-.card .descricao .detalhes{
-padding: 40px;
-text-align: center;
-width: 100%;
-transition: 0.5s;
-transform: translateY(145px);
+
+.card .descricao .detalhes {
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+  transform: translateY(145px);
 }
 
-.card:hover .descricao .detalhes{
+.card:hover .descricao .detalhes {
   transform: translateY(0px);
 }
 
-.card .descricao .detalhes h2{
-font-size: 1.25em;
-font-weight: 600;
-color:#45f3ff;
-line-height: 1.2em;
-
-}
-.card .descricao .detalhes h2 span{
-font-size: 0.75em;
-font-weight: 500;
-color: #FFF;
+.card .descricao .detalhes h2 {
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #45f3ff;
+  line-height: 1.2em;
 
 }
 
-.card .descricao .detalhes .data{
-display: flex;
-justify-content: space-between;
-margin: 10px 0;
+.card .descricao .detalhes h2 span {
+  font-size: 0.75em;
+  font-weight: 500;
+  color: #FFF;
+
 }
 
-.card .descricao .detalhes h3{
+.card .descricao .detalhes .data {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.card .descricao .detalhes h3 {
   font-size: 1em;
   color: #3687BD;
   line-height: 1.2em;
@@ -223,41 +233,42 @@ margin: 10px 0;
 
 }
 
-.card .descricao .detalhes h3 span{
-font-size: 0.85em;
-font-weight: 400;
-color: #FFF;
+.card .descricao .detalhes h3 span {
+  font-size: 0.85em;
+  font-weight: 400;
+  color: #FFF;
 }
 
-.card .descricao .detalhes .acoes{
+.card .descricao .detalhes .acoes {
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
 
-.card .descricao .detalhes .acoes button{
-padding: 10px 30px;
-border: none;
-outline: none;
-border-radius: 5px;
-font-size: 1em;
-font-weight: 500;
-background-color: #45f3ff;
-color: #222;
-cursor: pointer;
-opacity: 0.8;
-transition: 0.5s;
+.card .descricao .detalhes .acoes button {
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: #45f3ff;
+  color: #222;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.5s;
 }
 
-.card .descricao .detalhes .acoes button:nth-child(2){
+.card .descricao .detalhes .acoes button:nth-child(2) {
   background-color: #FFF;
 }
 
-.card .descricao .detalhes .acoes button:hover{
+.card .descricao .detalhes .acoes button:hover {
   opacity: 1;
   transform: scale(1.05);
 }
-.espaco{
-height: 50px;
-display: block;
+
+.espaco {
+  height: 50px;
+  display: block;
 }
