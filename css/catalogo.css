@@ -1,6 +1,6 @@
 body {
   background-color: #3687BD;
-  height: 100%;
+  max-height: 100%;
   margin: 0;
   display: flex;
   align-items: center;
@@ -254,7 +254,10 @@ transition: 0.5s;
 }
 
 .card .descricao .detalhes .acoes button:hover{
-
   opacity: 1;
-
+  transform: scale(1.05);
+}
+.espaco{
+height: 50px;
+display: block;
 }
