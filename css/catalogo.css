@@ -247,7 +247,7 @@ button:hover {
   gap: 20px;
 }
 
-.card .descricao .detalhes .acoes button {
+.card .descricao .detalhes .acoes a button {
   padding: 10px 30px;
   border: none;
   outline: none;
@@ -261,18 +261,15 @@ button:hover {
   transition: 0.5s;
 }
 
-.card .descricao .detalhes .acoes button:nth-child(2) {
+.card .descricao .detalhes .acoes a button:nth-child(2) {
   background-color: #FFF;
 }
-
-.card .descricao .detalhes .acoes button:hover {
+.card .descricao .detalhes .acoes a button:hover {
   opacity: 1;
-  transform: scale(1.05);
+  transform: scale(1.09);
 }
 
 .espaco {
   display: inline-block;
-
   height: 50px;
-
 }
