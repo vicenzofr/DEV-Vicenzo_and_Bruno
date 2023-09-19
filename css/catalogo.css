@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-
+display: inline-block;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -70,7 +70,7 @@ button:hover {
 } */
 
 .card {
-
+  display: inline-block;
   position: relative;
   width: 350px;
   height: 190px;
@@ -83,6 +83,8 @@ button:hover {
 }
 
 .card .lines {
+  display: inline-block;
+
   position: absolute;
   inset: 0;
   background-color: blue;
@@ -146,7 +148,7 @@ button:hover {
   width: 500px;
   height: 150px;
   transform: translate(-50%, -50%);
-  background: linear-gradient(transparent, #ff3c7b, #ff3c7b, #ff3c7b, transparent);
+  background: linear-gradient(transparent, #4cff3c, #4cff3c, #4cff3c, transparent);
   animation: animate2 4s linear;
   animation-iteration-count: infinite;
 }
@@ -269,6 +271,8 @@ button:hover {
 }
 
 .espaco {
+  display: inline-block;
+
   height: 50px;
-  display: block;
+
 }
