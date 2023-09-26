@@ -1,4 +1,4 @@
-* {
+    * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -358,7 +358,7 @@ form .btn-enviar {
 
 form .btn-enviar input {
     width: 120px;
-    background-color: ##50B5E3;
+    background-color: #50B5E3;
     color: #000000;
     cursor: pointer;
     transition: .3s;
